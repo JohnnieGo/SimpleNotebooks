@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Simple Notebooks</title>
+</head>
+<body>
+    <wrapper id="wrapper">
+        <header id="header">
+            <div id="headerMenu">
+                <img src="Logo.png" alt="" id="logo">
+                <img src="Icons/hamburgerMenu.png" id="dropMenuButton" onclick="showMenu()"> 
+            </div>
+        </header>
+
+        <section id="content">
+            <div class="slideshow-container">
+
+                <div class="mySlides animate__animated animate__fadeIn">
+                  <img src="Pictures/notebookontable1_optimized.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides animate__animated animate__fadeIn">
+                  <img src="Pictures/notbookondesk2_optimized.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides animate__animated animate__fadeIn">
+                  <img src="Pictures/notebookondesk_optimized.jpg" style="width:200%;">
+                </div>
+                
+                <a class="prev" style="color: white; cursor: pointer;" onclick="plusSlides(-1)">❮</a>
+                <a class="next" style="color: white; cursor: pointer;" onclick="plusSlides(1)">❯</a>
+                <div id="text">
+                    <h1>Notatniki dla Ciebie</h1>
+                </div>
+
+                <button class="button"><span>Pokaż więcej</span></button>
+            </div>
+
+            <div class="section">
+                <h1 class="sectionPadding">Polecamy</h1>
+                <div class="showContainer sectionPadding">
+                    <div class="leftShowContainer sectionPadding">
+                        <div class="pictureBox"><img src="Pictures/leathernotebook_optimized.jpg" alt=""></div>
+                        <span>Notes skórzany</span>
+                        <h6>129 zł</h6>
+                    </div>
+                    <div class="rightShowContainer sectionPadding">
+                        <div class="pictureBox"><img src="Pictures/papernotebooks_optimized.jpeg"></div>
+                        <span>Notes tekturowy</span>
+                        <h6>59 zł</h6>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="section">
+                <h1 class="sectionPadding">Blog</h1>
+                <div class="showContainer">
+                    <div class="leftShowContainer">
+                        <div class="pictureBox"><img src="Pictures/bookbinding.gif" alt=""></div>
+                        <span>Jak powstają notatniki</span>
+                    </div>
+                    <div class="rightShowContainer">
+                        <div class="pictureBox"><img src="Pictures/econotebook_optimized.jpg"></div>
+                        <span>Dlaczego warto kupować ekologiczne notatniki?</span>
+                    </div>
+                </div> 
+                <div class="buttonCenterDiv">
+                    <button class="button" id="butttonBlog"><span>Pokaż więcej</span></button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h1>Poznajmy się!</h1>
+                <div class="socialMediaDiv">
+                   <img src="Icons/facebookicon_optimized.png" alt="">
+                   <img src="Icons/instagramicon_1_optimized.png">
+                   <img src="Icons/twittericon_optimized.png">
+                   <img src="Icons/youtubeicon_optimized.png">
+                </div>
+            </div>
+
+        </section>
+        
+        <footer id="footer">
+            <p>Copyright 2022 SimpleNotebooks</p>
+        </footer>
+        
+
+        <div id="mobileMenu" style="display: none;" class="animate__animated animate__slideInUp">
+            <div class="menuCenter">
+                <ul>
+                    <li>Strona główna</li>
+                    <li><a href="notebooks.html">Notatniki</a></li>
+                    <li>Koszyk</li>
+                    <li>O sklepie</li>
+                    <li>Kontakt</li>
+                    <img src="Icons/X.png" onclick="hideMenu()" id="menuX">
+                </ul>
+            </div>
+        </div>
+
+        
+    </wrapper>
+    
+<script src="script.js"></script>
+</body>
+</html>
