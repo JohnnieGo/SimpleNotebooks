@@ -1,3 +1,48 @@
+//Filters
+
+(function() {
+    const parent = document.querySelector('.range-slider');
+
+    if (!parent) {
+        return;
+    }
+
+    const rangeS = parent.querySelectorAll('input[type="range"]'),
+          numberS = parent.querySelectorAll('input[type="number"]');
+
+    rangeS.forEach((el) => {
+        el.oninput = () => {
+            let slide1 = parseFloat(rangeS[0].value),
+                slide2 = parseFloat(rangeS[1].value);
+
+            if (slide1 > slide2) {
+                [slide1, slide2] = [slide2, slide1];
+            }
+
+            numberS[0].value = slide1;
+            numberS[1].value = slide2;
+        }
+    });
+
+    numberS.forEach((el) => {
+        el.oninput = () => {
+            let number1 = parseFloat(numberS[0].value),
+                number2 = parseFloat(numberS[1].value);
+
+            if (number1 > number2) {
+                let tmp = number1;
+                numberS[0].value = number2;
+                numberS[1].value = tmp;
+            }
+
+            rangeS[0].value = number1;
+            rangeS[1].value = number2;
+        }
+    });
+})();
+
+// Pokazywanie manu
+
 function showMenu () {
     var x = document.getElementById("mobileMenu");
             x.style.display = "flex";
@@ -30,8 +75,6 @@ function hideFilters () {
 
 
 
-//Filters
-!function(){const e=document.querySelector(".range-slider");if(!e)return;const l=e.querySelectorAll('input[type="range"]'),a=e.querySelectorAll('input[type="number"]');l.forEach(e=>{e.oninput=(()=>{let e=parseFloat(l[0].value),t=parseFloat(l[1].value);e>t&&([e,t]=[t,e]),a[0].value=e,a[1].value=t})}),a.forEach(e=>{e.oninput=(()=>{let e=parseFloat(a[0].value),t=parseFloat(a[1].value);if(e>t){let l=e;a[0].value=t,a[1].value=l}l[0].value=e,l[1].value=t})})}();
 
 
 // Photo slider
