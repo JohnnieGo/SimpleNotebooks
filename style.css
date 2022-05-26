@@ -15,8 +15,13 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
+span{
+    cursor: pointer;
+}
+
 h1{
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 30pt;
     margin: 0;
 }
 
@@ -29,12 +34,20 @@ h2{
 h3{
     font-size: 20px;
     margin: 0px;
+    margin-top: 20px;
     font-style: normal;
+}
+
+h4{
+    font-size: 20px;
+    margin: 0px;
+    font-style: normal;
+    margin-left: 20px;
 }
 
 h6{
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: medium;
     color: grey;
 }
@@ -61,6 +74,7 @@ span{
    align-items: center;
    justify-content: center;
    z-index: 12;
+   ;
 }
 
 #headerMenu{
@@ -83,6 +97,7 @@ span{
 
 #footer{
     padding-top: 100px;
+    padding-bottom: 20px;
     width: 100%;
     height: 20px;
     display: flex;
@@ -146,6 +161,7 @@ span{
     min-width: 300px;
     height: 60vh;
     max-width: 100vw;
+    max-height: 600px;
     display: flex;
     /* justify-content: space-around; */
     align-items: center;
@@ -240,7 +256,10 @@ justify-content: space-between;
 .section{
     padding: 6vh 16px 0 16px;
     position: relative;
+    width: 100vw;
+    max-width: 1040px;
 }
+
 
 .leftShowContainer{
     width: 48%;
@@ -524,45 +543,282 @@ select {
     color: grey;
 }
 
-.buttonsFilters{
+.breadCrumbs{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 3vh;
+}
+
+.breadCrumbs a{
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.productInfo{
+    margin-top: 30px;
+}
+
+.productInfo h3{
+    color: gray;
+}
+
+/* CheckboxCOlor */
+.checkbox-button {
+    cursor: pointer;
+  }
+
+  .checkbox-button__input {
+      opacity: 0;
+      position: absolute;
+  }
+  
+  .checkbox-button__control {
+      position: relative;
+      display: inline-block;
+      width: 50pt;
+      height: 50pt;
+      margin-right: 12px;
+      vertical-align: middle;
+      border: 2px solid #666;
+      
+  }
+
+  .choice1{
+    background-color: black;
+  }
+  
+  
+  .checkbox-button__input:checked+.checkbox-button__control:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 10px;
+      height: 10px;
+      background-color: #01a982;
+  }
+  
+  .checkbox-button__input:checked+.checkbox-button__control {
+      border-color: #01a982;
+  }
+  
+  .checkbox-button__control {
+    transform: scale(0.75);
+  }
+  
+
+  .containerInfo {
+    display: block;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  
+.colorChoose{
+display: flex;
+padding: 0;
+margin: 0;
+margin-top: 30px;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
 
 }
 
+.colorChoose div{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#red{
+    background-color: #902324;
+}
+
+#brown{
+    background-color: #905923;
+}
+
+#orange{
+    background-color: #CD7F32;
+}
+
+.buySection{
+    margin-top: 30px;
+    display: flex;
+    flex-direction:row;
+}
 
 
+.counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+.btn{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #202020;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 1);
+    box-shadow: 1px 8px 24px 3px rgba(0, 0, 0, 1);
+   }
+
+.count{
+    font-size: 20px;
+    font-weight: 900;
+    color: #202020;
+   }
 
 
+.reactSection{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+.reactSection img{
+    margin-right: 10px;
+}
+
+.pageText{
+    margin-top: 40px;
+}
+
+.cartProduct{
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ justify-content: space-between;
+ margin-top: 20px;
+ padding-bottom: 20px;
+}
+
+.cartText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-between;
+    height: 150px;
+}
+
+.cartImg{
+    width: 150px;
+    height: 150px;
+    background-image: url("Pictures/leathernotebook1_optimized.jpg");
+    background-size: cover;
+}
+
+.cartImg2{
+    width: 150px;
+    height: 150px;
+    background-image: url("Pictures/papernotebookblue_optimized.jpeg");
+    background-size: cover;
+}
+
+.buyProductAction button{
+    margin-top: 10px;
+}
+
+.buyProductAction{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.blogSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.blogSection p{
+    padding-left: 20px;
+}
+
+.blogSection a{
+    font-size: large;
+}
+
+.blogSection img{
+    width:50%;
+    height:fit-content;
+    object-fit: cover;
+}
+
+#dostawaSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#dostawaSection a{
+    padding-bottom: 10px;
+}
+
+#dostawaSection h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#dostawaSection input{
+width: 100%;
+max-width: 400px;
+height: 30px;
+}
 
 
+.dostawaSection{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
 
+.dostawaSection input{
+    margin: 0;
+    padding: 0;
+}
 
+.dostawaSection select{
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 100%;
+    }
 
+.dostawaSection label{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.blogSection:hover img{
+        -webkit-transform: scale(0);
+        transform: scale(1);
+}
 
 
 

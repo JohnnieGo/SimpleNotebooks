@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Simple Notebooks</title>
+</head>
+<body>
+    <wrapper id="wrapper">
+        <header id="header">
+            <div id="headerMenu">
+                <img src="Logo.png" alt="" id="logo">
+                <img src="Icons/hamburgerMenu.png" id="dropMenuButton" onclick="showMenu()"> 
+            </div>
+        </header>
+
+        <content>
+            <div class="section">
+                <div class="breadCrumbs">
+                    <a href="index.html">Strona główna</a>
+                    <a href="notebooks.html">Notesy</a>
+                    <a>Notes tekturowy</a>
+                </div>
+                <div class="slideshow-container" style="height: fit-content">
+                    
+                    <div class="mySlides animate__animated animate__fadeIn">
+                      <img src="Pictures/papernotebook_optimized.jpeg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides animate__animated animate__fadeIn">
+                      <img src="Pictures/papernotebookblue_optimized.jpeg" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides animate__animated animate__fadeIn">
+                        <img src="Pictures/papernotebookscol_optimized.jpeg" style="width:100%;">
+                      </div>  
+
+                      <div class="mySlides animate__animated animate__fadeIn">
+                        <img src="Pictures/papernotebookspacked_optimized.jpeg" style="width:100%;">
+                      </div> 
+                    
+                    <a class="prev" style="color: white; cursor: pointer;" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" style="color: white; cursor: pointer;" onclick="plusSlides(1)">❯</a>
+                </div>
+                <div class="productInfo">
+                    <h1>Notes tekturowy</h1>
+                    <h3>39,00 PLN</h3>
+                    <div class="colorChoose">
+                        <div id="red"></div>
+                        <div id="brown"></div>
+                        <div id="orange"></div>
+                    </div>
+                    <div class="buySection">
+                        <button class="button"><a>Do koszyka</a></button>
+                        <div class="counter">
+                            <div class="btn">+</div>
+                            <div class="count">2</div>
+                            <div class="btn">-</div>
+                        </div>
+                    </div>
+                    <div class="reactSection">
+                        <img src="Icons/Like.png">
+                        <img src="Icons/Share.png">
+                        <img src="Icons/Love.png">
+                    </div>
+                    <section class="pageText">
+                        <p style="font-size: larger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam purus in tortor posuere pellentesque. Donec pharetra in libero eu egestas. Phasellus et sem sodales, semper sem auctor, varius urna. Maecenas non dui orci.<br><br> Donec eu augue ultricies, hendrerit lacus id, dictum sapien. Ut finibus ex feugiat imperdiet condimentum, ipsum sem fermentum nisl, eget congue purus nulla nec arcu. Mauris id risus dui. Ut semper sem orci, ut sollicitudin leo pharetra et. Ut accumsan tempus magna, eget commodo felis. <br><br> Donec pharetra in libero eu egestas. Phasellus et sem sodales, semper sem auctor, varius urna. Maecenas non dui orci. Donec eu augue - ultricies, - hendrerit lacus id, - dictum sapien.</p>
+                    </section>
+                    <div class="section" style="width: 100%; padding: 0; padding-top: 20px;">
+                        <h1 class="sectionPadding">Polecamy</h1>
+                        <div class="showContainer sectionPadding">
+                            <div class="leftShowContainer sectionPadding">
+                                <div class="pictureBox"><img src="Pictures/leathernotebook_optimized.jpg" alt=""></div>
+                                <span><a href="notes_skorzany.html">Notes skórzany</a></span>
+                                <h6>129 zł</h6>
+                            </div>
+                            <div class="rightShowContainer sectionPadding">
+                                <div class="pictureBox"><img src="Pictures/papernotebooks_optimized.jpeg"></div>
+                                <span><a href="notes_tekturowy.html">Notes tekturowy</a></span>
+                                <h6>59 zł</h6>
+                            </div>
+                        </div>    
+                    </div>
+
+                </div>
+            </div>
+        </content>
+        
+        <footer id="footer">
+            <p>Copyright 2022 SimpleNotebooks</p>
+        </footer>
+        
+
+        <div id="mobileMenu" style="display: none;" class="animate__animated animate__slideInUp">
+            <div class="menuCenter">
+                <ul>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="notebooks.html">Notatniki</a></li>
+                    <li><a href="Koszyk.html">Koszyk</a></li>
+                    <li><a href="OSklepie.html">O sklepie</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <img src="Icons/X.png" onclick="hideMenu()" style="z-index: 10000;">
+                </ul>
+            </div>
+        </div>
+        
+        </div>
+        
+    </wrapper>
+
+<script src="script.js"></script>
+</body>
+</html>

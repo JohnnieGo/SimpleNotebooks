@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Simple Notebooks</title>
+</head>
+<body>
+    <wrapper id="wrapper">
+        <header id="header">
+            <div id="headerMenu">
+                <img src="Logo.png" alt="" id="logo">
+                <img src="Icons/hamburgerMenu.png" id="dropMenuButton" onclick="showMenu()"> 
+            </div>
+        </header>
+
+        <content>
+            <div class="section" id="dostawaSection" style="width: 100vw;">
+            
+                <h1>Dostawa</h1>
+                <span>* gwiazdka oznacza pola wymagane</span>
+                <div class="dostawaSection">
+                    <a>Odbiorca*</a>
+                    <input type="text">
+                </div>
+                <div class="dostawaSection">
+                    <label for="rodzaj" class="labelSelect"><a>Kraj*</a></label>
+                    <select name="rodzaj">
+                        <option value="1">&nbsp Polska</option>
+                        <option value="2">&nbsp Chiny</option>
+                        <option value="3">&nbsp Hunululu</option>
+                    </select>
+                </div>  
+                <div class="dostawaSection">
+                    <a>Kod pocztowy*</a>
+                    <div>
+                    <input type="text" style="width: 50px;"> <span>-</span> <input type="text" style="width: 100px"> 
+                    </div>
+                </div>
+                <div class="dostawaSection">
+                    <a>Ulica*</a>
+                    <input type="text">
+                </div>
+                <div class="dostawaSection">
+                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-around; width: 100%;">
+                        <div>
+                        <a>Nr budynku*</a>
+                        <input type="text" style="width: 70px;">
+                        </div>
+                        <span>&nbsp / &nbsp</span>
+                        <div>
+                        <a>Nr lokalu</a>
+                        <input type="text" style="width:70px;">
+                        </div>
+                    </div> 
+                </div>
+                <div style="display: flex; flex-direction: row; align-items: center; margin-top: 30px;">
+                    <input type="checkbox" id="Faktura" style="width: auto; width: 30px;">
+                    <label for="Faktura">Faktura VAT (opcjonalnie)</label>
+                </div>
+                <h1>Sposób dostawy</h1>
+                <div class="checkBoxes" style="margin-bottom: 0;">
+                    <label class="container">Pocztex
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">InPost
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Poczta Polska
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div> 
+                <h1>Płatność</h1>
+                <div class="checkBoxes" style="margin-bottom: 0;">
+                    <label class="container">BLIK
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Przelew
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Płatność przy odbiorze
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div> 
+                <div style="display: flex; flex-direction: row; align-items: center; margin-top: 30px;">
+                    <input type="checkbox" id="Regulamin" style="width: auto; width: 30px;">
+                    <label for="Regulamin"><a>Akceptuję regulamin*</a></label>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; margin-top: 30px;">
+                    <button class="button"><a href="udałoSie.html" style="padding-bottom: 0;">Zamów</a></button>
+                </div>
+            </div>
+        </content>
+        
+        <footer id="footer">
+            <p>Copyright 2022 SimpleNotebooks</p>
+        </footer>
+        
+
+        <div id="mobileMenu" style="display: none;" class="animate__animated animate__slideInUp">
+            <div class="menuCenter">
+                <ul>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="notebooks.html">Notatniki</a></li>
+                    <li><a href="Koszyk.html">Koszyk</a></li>
+                    <li><a href="OSklepie.html">O sklepie</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <img src="Icons/X.png" onclick="hideMenu()" style="z-index: 10000;">
+                </ul>
+            </div>
+        </div>
+        
+        </div>
+        
+    </wrapper>
+
+<script src="script.js"></script>
+</body>
+</html>

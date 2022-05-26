@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Simple Notebooks</title>
+</head>
+<body>
+    <wrapper id="wrapper">
+        <header id="header">
+            <div id="headerMenu">
+                <img src="Logo.png" alt="" id="logo">
+                <img src="Icons/hamburgerMenu.png" id="dropMenuButton" onclick="showMenu()"> 
+            </div>
+        </header>
+
+        <content>
+            <section>
+            <div class="section">
+                <h1>Koszyk</h1>
+                <div class="cartProduct">
+                    <div class="cartImg"></div>
+                    <div class="cartText">
+                        <h4>Notes skórzany <a style="color: red;">X</a></h4>
+                        <h6 style="margin-left: 20px;">99,00 PLN</h6>
+                        <div class="counter">
+                            <div class="btn">+</div>
+                            <div class="count">1</div>
+                            <div class="btn">-</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartProduct">
+                    <div class="cartImg2"></div>
+                    <div class="cartText">
+                        <h4>Notes tekturowy <a style="color: red;">X</a></h4>
+                        <h6 style="margin-left: 20px;">39,00 PLN</h6>
+                        <div class="counter">
+                            <div class="btn">+</div>
+                            <div class="count">1</div>
+                            <div class="btn">-</div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="buyProductAction">
+                    <h6>139 PLN</h6>
+                    <h6 style="color: green;">Darmowa dostawa na ternie Polski</h6>
+                    <button class="button"><a href="Dostawa.html">Kup</a></button>
+                </div>
+            </div>
+        </section>
+        </content>
+        
+        
+
+        <div id="mobileMenu" style="display: none;" class="animate__animated animate__slideInUp">
+            <div class="menuCenter">
+                <ul>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="notebooks.html">Notatniki</a></li>
+                    <li><a href="Koszyk.html">Koszyk</a></li>
+                    <li><a href="OSklepie.html">O sklepie</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <img src="Icons/X.png" onclick="hideMenu()" style="z-index: 10000;">
+                </ul>
+            </div>
+        </div>
+        
+        </div>
+        
+    </wrapper>
+
+<script src="script.js"></script>
+</body>
+</html>
