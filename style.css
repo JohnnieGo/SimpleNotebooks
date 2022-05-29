@@ -74,7 +74,8 @@ span{
    align-items: center;
    justify-content: center;
    z-index: 12;
-   ;
+   box-shadow: 0 4px 2px -2px gray;
+
 }
 
 #headerMenu{
